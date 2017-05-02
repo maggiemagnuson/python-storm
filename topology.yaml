@@ -1,0 +1,9 @@
+nimbus.host: "localhost"
+supervisor.worker.timeout.secs: 60
+topology.workers: 1
+
+ChicagoCrimeSpout.initialize.hosts: '192.168.33.104:9092'
+ChicagoCrimeSpout.initialize.topics: "chicago_crime"
+ChicagoCrimeSpout.initialize.consumer_group: "python_storm_cc"
+ChicagoCrimeSpout.initialize.zookeeper: '192.168.33.104:2181'
+ChicagoCrimeSpout.initialize.consumer_timeout_ms: "6000"
